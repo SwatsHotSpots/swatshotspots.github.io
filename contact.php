@@ -9,9 +9,10 @@ if($_POST["submit"]) {
 
     $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
 
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+    $retval = mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
 
-    <!-- $thankYou="<p>Thank you! Your message has been sent.</p>"; -->
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
 }
 ?>
 <!-- PHP for sending form data as email-->

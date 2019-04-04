@@ -1,7 +1,6 @@
-<!--
 <?php
 
-if($_POST["submit"]) {
+if(isset($_POST["submit"])) {
     $recipient="swatshotspots@gmail.com";
     $subject=$_POST["subject"];
     $sender=$_POST["author"];
@@ -10,14 +9,14 @@ if($_POST["submit"]) {
 
     $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
 
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
--->
-    <!-- $thankYou="<p>Thank you! Your message has been sent.</p>"; -->
-	<!-- 
-}
-?> -->
+    $retval = mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
 
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+?>
 <!-- PHP for sending form data as email-->
+
 
 
 
@@ -227,8 +226,8 @@ $.localScroll();
 								<label for="text">Message:</label> <textarea id="text" name="text" rows="0" cols="0" class="required"></textarea>
 								<div class="cleaner h10"></div>
 
-								<input type="submit" value="Send" id="submit" name="submit" class="submit_btn float_l" />
-								<input type="reset" value="Reset" id="reset" name="reset" class="submit_btn float_r" />
+								<input type="submit" value="Submit" id="submit" name="submit" class="submit_btn float_r" />
+								<input type="reset" value="Reset" id="reset" name="reset" class="submit_btn float_l" />
 							</form>
 
 						</div>
