@@ -1,3 +1,12 @@
+<?php
+if($_POST["message"]) {
+    mail("swatshotspots@gmail.com", "Form to email message", $_POST["message"], "From: an@email.address");
+}
+?>
+<!-- PHP for sending form data as email-->
+<!-- TODO: fix Subject and FROM-->
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -191,7 +200,7 @@ $.localScroll();
 					<h4>Quick Contact Form</h4>
 						<div id="contact_form">
 
-							<form method="post" name="contact" action="mailto:swatshotspots@gmail.com">
+							<form method="post" name="contact" action="contact.php">
 								<label for="author">Name:</label> <input type="text" id="author" name="author" class="required input_field" />
 								<div class="cleaner h10"></div>
 
