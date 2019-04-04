@@ -1,8 +1,18 @@
 <?php
-if($_POST["message"]) {
-    mail("swatshotspots@gmail.com", "Form to email message", $_POST["message"], "From: an@email.address");
+
+if($_POST["submit"]) {
+    $recipient="swatshotspots@gmail.com";
+    $subject=$_POST["subject"];
+    $sender=$_POST["author"];
+    $senderEmail=$_POST["email"];
+    $message=$_POST["text"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
 }
-?>
 <!-- PHP for sending form data as email-->
 <!-- TODO: fix Subject and FROM-->
 
@@ -194,7 +204,7 @@ $.localScroll();
 
 			<div id="contact" class="main_box">
 				<h1>Contact Us</h1>
-				<p> Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow"><strong>XHTML</strong></a> and <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow"><strong>CSS</strong></a>.</p>
+				<!-- <p> Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow"><strong>XHTML</strong></a> and <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow"><strong>CSS</strong></a>.</p> -->
 					<div class="cleaner h30"></div>
 					<div class="col_12 float_l">
 					<h4>Quick Contact Form</h4>
