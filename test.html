@@ -13,6 +13,7 @@ if(isset($_POST["submit"])) {
 
 
     $thankYou="<p>Thank you! Your message has been sent.</p>";
+		header('Location: index.html');
 }
 ?>
 <!-- PHP for sending form data as email-->
@@ -213,7 +214,7 @@ $.localScroll();
 					<h4>Quick Contact Form</h4>
 						<div id="contact_form">
 
-							<form method="post" name="contact" action="contact.php">
+							<form method="post" name="contact" action="">
 								<label for="author">Name:</label> <input type="text" id="author" name="author" class="required input_field" />
 								<div class="cleaner h10"></div>
 
