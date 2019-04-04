@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Swat's Hot Spots</title>
+  </head>
+
+  <body>
+    <h1>Welcome to Swat's Hot Spots</h1>
+    <p1> Discover if your favorite Study Space is occupied!<br><br>
+
+    <nav>
+      <ul>
+        <li><strong>Home</strong></li>
+        <li><a href="about.html">About</a></li>
+        <ul>
+          <li><a href="hardware.html">Hardware</a></li>
+          <li><a href="software.html">Software</a></li>
+        </ul>
+        <li><a href="test.html">Test</a></li>
+      </ul>
+    </nav>
+
+  <!--
+
+      <em>Emphasized text</em><br>
+      <strong>Strong text</strong><br>
+      <code>A piece of computer code</code><br>
+      <samp>Sample output from a computer program</samp><br>
+      <kbd>Keyboard input</kbd><br>
+      <var>Variable</var><br>
+      <br>
+ -->
+ <!--
+      <br> &emsp; &emsp; &emsp; &emsp; <!--white space tabs-->
+      <!--
+      <strong> Option 1 </strong> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+      <strong> Option 2 </strong> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+      <strong> Option 3 </strong><br>
+    </p1>
+
+    <img
+      src="http://4.bp.blogspot.com/-HTvSYzA-pO4/UgQb4Zh_u0I/AAAAAAAAEuI/XwhtogT_1tA/s1600/3+cute2.jpg"
+      alt = "bunny"
+      width = 200
+      height = 260
+      >
+    </img>
+    <img
+      src="https://i.pinimg.com/736x/2c/ac/ae/2cacae63626e91d6887608bf51217907--spring-animals-baby-animals.jpg"
+      alt = "duck"
+      width = 200
+      height = 260
+      >
+    </img>
+    <img
+      src="https://c1.staticflickr.com/3/2401/2508246015_26621b4ffb_b.jpg"
+      alt = "lamb"
+      width = 200
+      height = 260
+      >
+    </img><br>
+
+    -->
+  <!--
+    <form name = "form1" >
+      <SELECT name = "myself" onchange = "changeOptionValue()"> <!-- This is a drop down -->
+      <!--
+
+        <OPTION value="option 1"> Option 1 </OPTION>
+        <OPTION value="option 2"> Option 2 </OPTION>
+        <OPTION value="option 3"> Option 3 </OPTION>
+      </SELECT>
+      <br>
+      First name: <input type="text" name="fname" id = "fname"><br>
+      Last name: <input type="text" name="lname" id = "lname"><br>
+      <input type="submit" value="Submit" id = "submit"
+        onclick = "submitChange()"
+        formaction= ""
+        >
+
+    </form>
+
+
+-->
+<!--
+
+  <script type = "text/javascript">
+
+      function changeOptionValue() {
+        var selectBox = document.form1.myself;
+        selectedItem = selectBox[selectBox.selectedIndex];
+        var val = selectedItem.value;
+        var forAlert = "You choose " + val
+        alert(forAlert);
+        var div = document.createElement('div');
+        var pic = document.createElement("img");
+        pic.setAttribute('src', 'https://c1.staticflickr.com/3/2401/2508246015_26621b4ffb_b.jpg');
+        div.appendChild(pic);
+      }
+  /*
+      function changeOptionValue() {
+        var selectBox = document.form1.myself;
+        selectedItem = selectBox[selectBox.selectedIndex];
+        var val = selectedItem.value;
+        var pic = document.createElement("img");
+        var div = document.createElement('div');
+
+        switch(val){
+          case 3:
+            pic.setAttribute('src', 'https://c1.staticflickr.com/3/2401/2508246015_26621b4ffb_b.jpg');
+            pic.setAttribute('width', 200);
+            pic.setAttribute('height', 260);
+            pic.setAttribute('alt' = "lamb");
+
+          case 2:
+            pic.setAttribute('src', 'https://i.pinimg.com/736x/2c/ac/ae/2cacae63626e91d6887608bf51217907--spring-animals-baby-animals.jpg');
+            pic.setAttribute('width', 200);
+            pic.setAttribute('height', 260);
+            pic.setAttribute('alt' = "duck");
+
+          default:
+            pic.setAttribute('src', 'http://4.bp.blogspot.com/-HTvSYzA-pO4/UgQb4Zh_u0I/AAAAAAAAEuI/XwhtogT_1tA/s1600/3+cute2.jpg');
+            pic.setAttribute('width', 200);
+            pic.setAttribute('height', 260);
+            pic.setAttribute('alt' = "bunny");
+        }
+        div.appendChild(pic);
+      }
+*/
+      function submitChange(){
+        thankYou()
+        //addVote()
+      }
+
+      function thankYou(){
+        var fname = document.getElementById('fname').value;
+        var forAlert = "Thank you, " + fname + "!";
+        alert(forAlert);
+      }
+      /*
+      function addVote(){
+
+      }*/
+
+  </script>
+-->
+  </body>
+
+
+
+</html>
