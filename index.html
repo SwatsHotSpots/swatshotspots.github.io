@@ -1,7 +1,6 @@
 <?php
 
 if(isset($_POST["submit"])) {
-    $test = "hi";
     $recipient="swatshotspots@gmail.com";
     $subject=$_POST["subject"];
     $sender=$_POST["author"];
@@ -15,11 +14,8 @@ if(isset($_POST["submit"])) {
 		header('Location: index.html');
     exit;
 }
-else{
-  $test = "bye";
-}
 
-<p> $test </p>
+
 ?>
 <!-- PHP for sending form data as email-->
 
