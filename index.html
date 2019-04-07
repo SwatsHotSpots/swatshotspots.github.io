@@ -1,6 +1,7 @@
 <?php
 
 if(isset($_POST["submit"])) {
+    $test = "hi";
     $recipient="swatshotspots@gmail.com";
     $subject=$_POST["subject"];
     $sender=$_POST["author"];
@@ -13,6 +14,9 @@ if(isset($_POST["submit"])) {
 
 		header('Location: index.html');
     exit;
+}
+else{
+  $test = "bye";
 }
 ?>
 <!-- PHP for sending form data as email-->
@@ -73,6 +77,7 @@ $.localScroll();
 
 			<div id="home" class="main_box">
 				<h1>Welcome to Swat's Hot Spots</h1>
+        <<h1>$test</h1>
 				<img src="images/tooplate_image_01.jpg" alt="image" class="img_frame img_float_l" />
 				<!-- <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius consectetur arcu, ut fermentum sem adipiscing id.</em></p> -->
 				<p align="justify">Discover if your favorite Study Space is occupied!</p>
