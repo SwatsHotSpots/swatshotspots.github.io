@@ -11,8 +11,6 @@ if(isset($_POST["submit"])) {
 
     $retval = mail($recipient, $subject, $mailBody);
 
-
-    <!-- $thankYou="<p>Thank you! Your message has been sent.</p>"; -->
 		header('Location: index.html');
     exit;
 }
