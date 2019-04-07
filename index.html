@@ -9,10 +9,10 @@ if(isset($_POST["submit"])) {
 
     $mailBody="Name: $sender \nEmail: $senderEmail \n\n$message";
 
-    $retval = mail($recipient, $subject, $mailBody); <!--, "From: $sender <$senderEmail>");-->
+    $retval = mail($recipient, $subject, $mailBody);
 
 
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
+    <!-- $thankYou="<p>Thank you! Your message has been sent.</p>"; -->
 		header('Location: index.html');
     exit;
 }

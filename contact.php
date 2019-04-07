@@ -13,6 +13,7 @@ if($_POST["submit"]) {
 
 
     $thankYou="<p>Thank you! Your message has been sent.</p>";
+    header('Location: index.html');
 }
 ?>
 <!-- PHP for sending form data as email-->
