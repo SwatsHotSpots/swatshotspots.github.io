@@ -1,26 +1,7 @@
-<!-- <?php
-
-if(isset($_POST["submit"])) {
-    $recipient="swatshotspots@gmail.com";
-    $subject=$_POST["subject"];
-    $sender=$_POST["author"];
-    $senderEmail=$_POST["email"];
-    $message=$_POST["text"];
-
-    $mailBody="Name: $sender \nEmail: $senderEmail \n\n$message";
-
-    $retval = mail($recipient, $subject, $mailBody);
-
-		header('Location: index.html');
-    exit;
-}
-
-
-?>
-<!-- PHP for sending form data as email--> -->
-
-
-
+<!--
+Template 2056 simple life
+http://www.tooplate.com/view/2056-simple-life
+-->
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -29,10 +10,7 @@ if(isset($_POST["submit"])) {
 <title>Swat's Hot Spots</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<!--
-Template 2056 simple life
-http://www.tooplate.com/view/2056-simple-life
--->
+
 <link href="tooplate_style.css" rel="stylesheet" type="text/css" />
 
 <script type='text/javascript' src='js/jquery.min.js'></script>
@@ -83,12 +61,14 @@ $.localScroll();
 				<div class="col_12 float_l">
 					<h3>What We Do</h3>
 					<ul class="tooplate_list">
-						<li>List Goals here</li>
-						<li>List Goals here</li>
-						<!-- <li>Fusce risus tortor, interdum in malesuada pulvinar rutrum nec molestie</li>
-						<li>Proin facilisis ullamcorper turpis, in placerat  sed, varius a nequ</li>
-						<li>Sed vel justo quis ligula blandit commodo molestie  sed, varius a nequ</li>
-						<li>Ut tristique sagittis arcu, vel laoreet turpis eu bibendum libero egestas</li> -->
+						<li> Allow Swarthmore college students to have a better idea of available study space
+							and seating and allow them to check this without physically being in the space.</li>
+						<li> Used the Omron D6T Thermal sensor and configure the sensors to
+							record data on the NodeMCU.</li>
+						<li> Transmit the data wirelessly using the NodeMCU's built-in
+							ESP8266 WiFi module.</li>
+						<li> Process the data into a useable form and finally viewing the
+							data in a way that is helpful to a user. </li>
 					</ul>
 				</div>
 				<!-- <div class="col_12 float_r"> -->
@@ -127,10 +107,12 @@ $.localScroll();
 				<p> Hannah is graduating from Swarthmore in May, 2019. At Swarthmore she studied
 	      both Engineering and Computer Science. <br>
 	      Outside of class, she enjoyed playing on the softball team and hanging out with great friends. <br>
+				</p>
 				<h3> Rachel </h3>
-				TODO: Some bio stuff <br>
-	      Rachel is awesome. She is smart, dedicated, organized and a great team player!
-			</p>
+				<p>
+	      Rachel is awesome. She is smart, dedicated, organized and a great team player! <br>
+				</p>
+
 					<!-- <blockquote>
 						<p>Fusce nec felis id lacus sollicitudin vulputate. Proin tincidunt, arcu id pellentesque accumsan, neque dolor imperdiet ligula, quis viverra tellus nulla a odio. Curabitur vitae risus turpis. </p>
 						<cite>Linda - <span>Web Team Manager</span></cite>
@@ -142,7 +124,8 @@ $.localScroll();
 				<!-- </div> -->
 				<!-- <div class="col_12 float_r">
 				-->
-					<!-- <h3>Software</h3>
+					<!--
+					<h3> </h3>
 					<ul class="tooplate_list">
 						<li>Nulla facilisi. Maecenas ac odio ipsum donec cursus ames ac turpis egesta</li>
 						<li>Fusce risus tortor, interdum in malesuada pulvinar rutrum nec molestie</li>
@@ -161,7 +144,7 @@ $.localScroll();
 			<div id="hardware" class="main_box">
 				<h1>Hardware</h1>
 				<ul id="gallery">
-					<li><a href="images/portfolio/01.jpg"><img src="images/portfolio/01.jpg" alt="Image 01" class="img_frame" /></a></li>
+					<li><a href="images/e90HardwareBlockDiagram.png"><img src="images/e90HardwareBlockDiagram.png" alt="HardwareBlockDiagram" class="img_frame" /></a></li>
 					<li><a href="images/portfolio/02.jpg"><img src="images/portfolio/02.jpg" alt="Image 02" class="img_frame" /></a></li>
 					<li><a href="images/portfolio/03.jpg"><img src="images/portfolio/03.jpg" alt="Image 03" class="img_frame" /></a></li>
 					<li><a href="images/portfolio/04.jpg"><img src="images/portfolio/04.jpg" alt="Image 04" class="img_frame" /></a></li>
