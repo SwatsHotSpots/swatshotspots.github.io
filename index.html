@@ -58,7 +58,8 @@ $.localScroll();
 				<!-- <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius consectetur arcu, ut fermentum sem adipiscing id.</em></p> -->
 				<p align="justify">Discover if your favorite Study Space is occupied!</p>
 				<div class="cleaner h40"></div>
-				<div class="col_12 float_l">
+				<!-- <div class="col_12 float_l"> -->
+				<div class="main_box">
 					<h3>What We Do</h3>
 					<ul class="tooplate_list">
 						<li> Allow Swarthmore college students to have a better idea of available study space
@@ -145,9 +146,11 @@ $.localScroll();
 				<h1>Hardware</h1>
 				<ul id="gallery">
 					<li><a href="images/e90HardwareBlockDiagram.png"><img src="images/e90HardwareBlockDiagram.png" alt="HardwareBlockDiagram" class="img_frame" /></a></li>
+					<!--
 					<li><a href="images/portfolio/02.jpg"><img src="images/portfolio/02.jpg" alt="Image 02" class="img_frame" /></a></li>
 					<li><a href="images/portfolio/03.jpg"><img src="images/portfolio/03.jpg" alt="Image 03" class="img_frame" /></a></li>
 					<li><a href="images/portfolio/04.jpg"><img src="images/portfolio/04.jpg" alt="Image 04" class="img_frame" /></a></li>
+				-->
 				</ul>
 				<div class="cleaner"></div>
 				<a href="#tooplate_main" class="gototop">Go To Top</a>
@@ -159,7 +162,18 @@ $.localScroll();
 				<h1>Software</h1>
 				<img src="images/tooplate_image_01.jpg" alt="Image 01" class="img_float_l img_frame" />
 				<!-- <p><em>Etiam vel purus ut eros ullamcorper faucibus ut ac mi. Sed eu elit diam. Sed cursus, sem eget auctor gravida, quam nunc faucibus diam, nec volutpat nunc nisi sed enim.</em></p> -->
-				<p> TODO: add stuff about the software </p>
+				<p> We used the Arduino IDE primarily to load software onto the NodeMCU.
+					Our code had several stages. The first was to read the thermal sensor
+					and parse the temperature information. Using this data, we determined
+					if a space was occupied. This information was them sent over WiFi to
+					this website. The source code was programmed in C, however the website
+					and the communication sent between the ESP8266 and our website is in HTML.
+					The full code used to implement our project can be found on our
+					<a href="https://github.com/SwatsHotSpots/swatshotspots.github.iot" target="_blank">Github</a>
+				</p>
+				<ul id="gallery">
+					<li><a href="images/SoftwareBlockDiagram.png"><img src="images/SoftwarewareBlockDiagram.png" alt="SoftwareBlockDiagram" class="img_frame" /></a></li>
+				</ul>
 				<div class="cleaner"></div>
 				<a href="#tooplate_main" class="gototop">Go To Top</a>
 				<div class="cleaner"></div>
